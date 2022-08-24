@@ -1,0 +1,437 @@
+{"intents": [
+
+        {       
+                "tag": "start_conversation",
+                "patterns": ["Hi there", "Is anyone there?","Hey","Hola", "Hello", "Good day","Hi"],
+                "responses": ["Hello, I'm sure you will love this course", "Happy to have you here", "Good to see you again", "Hi there, how can I help?"],
+                "context_set": [""]
+        },
+       
+        {       
+                "tag": "what_are_you",
+                "patterns": ["What is your name?", "what are you?", "who are you?","your name pls?"],
+                "responses": ["Hi, I'm  BoTrainer", "I'm BoTrainer ", "Call me BoTrainer"],
+                "context_set": [""]
+        },
+        {       
+                "tag": "end_conversation",
+                "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+                "responses": ["Have a lovely day!", "Have a nice studying time", "Enjoy !","Have fun with the course"],
+                "context_set": [""]
+        },
+        {       
+                "tag": "thanks",
+                "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+                "responses": ["Happy to help!", "Any time!", "My pleasure","Do enjoy the course","Have fun "],
+                "context_set": [""]
+        },
+        {       
+                "tag": "confused",
+                "patterns": [],
+                "responses": ["Sorry, kindly rephrase the question","Sorry, can't understand you", "Please give me more information", "Not sure I understand"],
+                "context_set": [""]
+        },
+        {       
+                "tag": "options",
+                "patterns": ["How can you help me?", "What can you do?", "What help you provide?", "How can you be helpful?", "What support do you offered","What do you know?","what help?","What are you about?"],
+                "responses": ["I can answer your questions and clear your misunderstandings"],
+                "context_set": [""]
+        },
+        {
+                "tag": "empty_elemnt",
+                "patterns": ["what do we call an element without a closing tag", "what can we call an element that does not have a closing tag", "what do you call an element without a closing tag", "what is an element that does not have a closing tag called" ],
+                "responses": ["Empty element"],
+                "context_set": [""]
+        },
+        {
+                "tag": "closing_element",
+                "patterns": ["what do you call an element that have a closing tag ", "what is an element that has a closing tag called", "what are elements that contain closing tags called", "what do you call an element with a cloding tag","what can we call an element that have a closing tag"],
+                "responses": ["Closing element"],
+                "context_set": [""]
+        },
+        {
+                "tag": "closing_opening_tag",
+                "patterns": ["what is the difference between a closing and an opening tag", "tell me the difference between a closing tag and an opening tag", "tell me the difference between opening and closing tag", "tell me the difference between an opening and closing tag", "tell me the difference between opening tag and closing tag", "tell me the difference between an opening tag and a closing tag"],
+                "responses": ["Closing tag has a / in front"],
+                "context_set": [""]
+        },
+        {
+                "tag": "image_tag",
+                "patterns": ["how do i tag an image", "how should i tag an image", "tell me the best way to tag an image", "what is the proper way to tag images", "tell me the best way to tag an image", "tell me the correct way to tag an image", "what is the correct way to tag an image", "which is the correct way to tag an image","how to add an image in html"],
+                "responses": [" &lt img src=\"image\" alt=\"MyImage\" &gt "],
+                "context_set": [""]
+        },
+        {
+                "tag": "line_break",
+                "patterns":  ["how can i create a line break", "how can i make a line break in text", "how do you create a line break in text", "how can i create a line break in text", "how do we create a line break in text", "how do you produce a line break in text","how to do a line break in a text"],
+                "responses": ["with the < br > tag"],
+                "context_set": [""]
+        },
+        {
+                "tag": "header",
+                "patterns":  ["how do you create a header", "how do i make a header","how can i make a header", "how to make a header"],
+                "responses": ["The <h1> to <h6> tags are used to define HTML headings.<h1> defines the most important heading. <h6> defines the least important heading"],
+                "context_set": [""]
+        },
+        {
+                "tag": "background_color",
+                "patterns":  ["how do i add background color to a web page", "how do i add background color", "how to add background color", "how do you add background color", "how do we add background color", "how do you add a background color"],
+                "responses": ["<body style=\"background-color:choose a color;\">"],
+                "context_set": [""]
+        },
+        {
+                "tag": "bold",
+                "patterns":  ["how to use bold text", "how do i put the text in bold", "how can i display the content in bold", "how do i show the text in bold", "how do i display my text in bold", "how can i show content in bold", "how do i display content in bold"],
+                "responses": [" with the < strong > tag"],
+                "context_set": [""]
+        },
+        {
+                "tag": "italic",
+                "patterns":  ["how do i put a text in italic", "how do i display a text in italic", "how do i display the content in italics", "how to use the italic style", "how do you display content in italic", "how do i display content in italic"],
+                "responses": ["with the < em > tag"],
+                "context_set": [""]
+        },
+        {
+                "tag": "hyperlink",
+                "patterns":  ["how do i create a hyperlink", "how can i create a hyperlink", "how can i make a hyperlink", "how do i make a hyperlink", "how do you make a hyperlink"],
+                "responses": ["<a href=\"http://www.example.com\">name</a> "],
+                "context_set": [""]
+        },
+         {
+                "tag": "tables",
+                "patterns":  ["how do i create html tables", "how can i create tables", "how do we create a table", "how do i create a table","how to create a table"],
+                "responses": ["The <table> tag defines an HTML table"],
+                "context_set": [""]
+        },
+        {
+                "tag": "table_row",
+                "patterns":  ["what does the <tr> tag do", "what does <tr> do", "tell me what does <tr> element do", "what does the <tr> element do", "the <tr> tag what does it do"],
+                "responses": ["The <tr> element defines a table row"],
+                "context_set": [""]
+        },
+        {
+                "tag": "table_header",
+                "patterns":  ["what does the <th> tag do", "what does <th> do", "tell me what does <th> element do", "what does the <th> element do", "the <th> tag what does it do"],
+                "responses": ["the <th> element defines a table header"],
+                "context_set": [""]
+        },
+        {
+                "tag": "table_cell",
+                "patterns":  ["what does the <td> tag do", "what does <td> do", "tell me what does <td> element do", "what does the <td> element do", "the <td> tag what does it do"],
+                "responses": ["the <td> element defines a table cell"],
+                "context_set": [""]
+        },
+        {
+                "tag": "add_row",
+                "patterns":  ["how can you add a row to a table", "how do you add rows in a table", "how do you add a row to a table","how can we add a row to a table"],
+                "responses": ["<tr>  </tr>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "add_header",
+                "patterns":  ["how can you add a header to a table", "how do you add headers in a table", "how do you add a header to a table","how can we add a header to a table"],
+                "responses": ["<th> </th>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "add_cell",
+                "patterns":  ["how can you add a cell to a table", "how do you add cells in a table", "how do you add a cell to a table","how can we add a cell to a table"],
+                "responses": ["<td> </td>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "ordered_list",
+                "patterns":  ["what makes a numbered list", "how do i make a numbered list", "how can i create a numbered list", "how can i make a numbered list", "how can we make a numbered list", "how do you make a numbered list"],
+                "responses": ["<ol>     </ol>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "unordered_list",
+                "patterns":  ["what makes a unordered list", "how do i make a unordered list", "how can i create a unordered list", "how can i make a unordered list", "how can we make a unordered list", "how do you make a unordered list"],
+                "responses": ["<ul>     </ul>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "checkbox",
+                "patterns":  ["how do i create a checkbox", "how do you make a checkbox", "how do i make a checkbox", "how to make a checkbox", "how to create a checkbox"],
+                "responses": ["<input type=\"checkbox\">  "],
+                "context_set": [""]
+        },
+        {
+                "tag": "text_field",
+                "patterns":  ["how do i create an input text field", "how do i create a text field", "how do we create an input text field", "how do you create an input text field", "how to make an input text field"],
+                "responses": ["<input type=\"text\">  "],
+                "context_set": [""]
+        },
+        {
+                "tag": "drop_down_list",
+                "patterns":  ["how do i create a drop-down list", "how do you create a drop-down list", "how can i create a drop-down list", "how do we  create a drop-down list"],
+                "responses": ["with <select> and here is an example : <select name=\"cars\" id=\"cars\">  <option value=\"audi\">Audi </option>  </select>"],
+                "context_set": [""]
+        },
+         {
+                "tag": "video",
+                "patterns":  ["how can i add a video file", "how do you add a video file", "how do i add a video", "how do i add a video file", "how can we add a video file"],
+                "responses": ["<video>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "audio",
+                "patterns":  ["how can i add a audio file", "how do you add a audio file", "how do i add a audio", "how do i add a audio file", "how can we add a audio file"],
+                "responses": ["<audio>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "required",
+                "patterns":  ["which attribute is used to specify the requirement to fill out the input field", "which attribute is used to specify that an input field must be filled out", "what attribute is used to specify that an input field must be used", "which attribute is used to specify that an input field has to be filled out", "what attribute is used to specify that an input field must be filled out", "how to indicate that an input field is obligatory","how can i indicate that an input field is obligatory"],
+                "responses": ["with the required attribute"],
+                "context_set": [""]
+        },
+        {
+                "tag": "nav",
+                "patterns":  ["what does the <nav> tag do", "what does <nav> do", "what does the <nav> element do"],
+                "responses": ["The <nav> HTML element represents a section of a page whose purpose is to provide navigation links"],
+                "context_set": [""]
+        },
+        {
+                "tag": "css",
+                "patterns":  ["where does css in html go", "where does css go in html","where does the css code goes","where do i put css","in what tag css is added","in which tag do i add css"],
+                "responses": ["CSS goes inside the <body> element"],
+                "context_set": [""]
+        },
+        {
+                "tag": "javascript",
+                "patterns":  ["how can i add javascript zone in a html document", "show some ways to add a javascript zone in an html document", "how to add a javascript zone in html","how do i add a javascript zone in html"],
+                "responses": ["<script src=\"..\\[folder_name]\\[file_name].js\"></script>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "area",
+                "patterns":  ["how do i add an area", "how can we add an area", "how can i add an area", "how do you add an area", "how do i add an area", "how to add an area"],
+                "responses": "The <area> tag defines an area inside an image map",
+                "context_set": [""]
+        },
+        {
+                "tag": "button",
+                "patterns":  ["how do i add a button", "how can we add a button", "how can i add a button", "how do you add a button", "how do i add a button", "how to add a button"],
+                "responses": ["<button type=\"button\">Click Me!</button>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "caption",
+                "patterns":  ["how do i add a caption", "how can we add a caption", "how can i add a caption", "how do you add a caption", "how do i add a caption", "how to add a caption"],
+                "responses": ["The <caption> tag defines a table caption it must be inserted immediately after the <table> tag"],
+                "context_set": [""]
+        },
+        {
+                "tag": "center",
+                "patterns":  ["how can i align my text and center it","how to center align text","how can i center align text","how do i center align text","how do you center align text"],
+                "responses": ["with <center> tag"],
+                "context_set": [""]
+        },
+        {
+                "tag": "legend",
+                "patterns":  ["what does the < legend > tag do", "what does < legend > do", "tell me what does < legend > element do", "what does the < legend > element do", "the < legend > tag what does it do"],
+                "responses": ["The <legend> tag defines a caption for the <fieldset> element"],
+                "context_set": [""]
+        },
+        {
+                "tag": "fieldset",
+                "patterns":  ["what does the < fieldset > tag do", "what does < fieldset > do", "tell me what does < fieldset > element do", "what does the < fieldset > element do", "the < fieldset > tag what does it do"],
+                "responses": ["The <fieldset> HTML element is used to group several controls as well as labels (<label>) within a web form"],
+                "context_set": [""]
+        },
+         {
+                "tag": "class",
+                "patterns": ["what is the class attribute", "what is a class", "what does a class mean", "explain what is a class","what is the class attribute in html"],
+                "responses": ["The class attribute is used to specify the class name for an HTML element. Multiple elements in HTML can have the same class value. Also, it is mainly used to associate the styles written in the stylesheet with the HTML elements"],
+                "context_set": [""]
+        },
+        {
+                "tag": "i",
+                "patterns":  ["what does the < i > tag do", "what does < i > do", "tell me what does < i > element do", "what does the < i > element do", "the < i > tag what does it do"],
+                "responses": ["makes text italic"],
+                "context_set": [""]
+        },
+        {
+                "tag": "big",
+                "patterns":  ["what does the < big > tag do", "what does < big > do", "tell me what does < big > element do", "what does the < big > element do", "the < big > tag what does it do"],
+                "responses": ["increases the font size of the text by one unit"],
+                "context_set": [""]
+        },
+        {
+                "tag": "small",
+                "patterns":  ["what does the < small > tag do", "what does < small > do", "tell me what does < small > element do", "what does the < small > element do", "the < small > tag what does it do"],
+                "responses": ["decreases the font size of the text by one unit"],
+                "context_set": [""]
+        },
+        {
+                "tag": "del",
+                "patterns":  ["what does the < del > tag do", "what does < del > do", "tell me what does < del > element do", "what does the < del > element do", "the < del > tag what does it do"],
+                "responses": ["displays as strike out text"],
+                "context_set": [""]
+        },
+        {
+                "tag": "mark",
+                "patterns":  ["what does the < mark > tag do", "what does < mark > do", "tell me what does < mark > element do", "what does the < mark > element do", "the < mark > tag what does it do"],
+                "responses": ["highlights the text"],
+                "context_set": [""]
+        },
+        {
+                "tag": "head_meaning",
+                "patterns":  ["what is the significance of < head >", "tell me the meaning of < head >", "what does < head > mean"],
+                "responses": ["<head> tag provides the information about the document. It should always be enclosed in the <html> tag. This tag contains the metadata about the webpage and the tags which are enclosed by head tag like <link>, <meta>, <style>, <script>, etc"],
+                "context_set": [""]
+        },
+        {
+                "tag": "body_meaning",
+                "patterns":  ["what is the significance of < body >", "tell me the meaning of < body >", "what does < body > mean"],
+                "responses": ["<body> tag defines the body of the HTML document. It should always be enclosed in the <html> tag. All the contents which needs to be displayed on the web page like images, text, audio, video, contents, using elements like <p>, <img>, <audio>, <heading>, <video>, <div>, etc."],
+                "context_set": [""]
+        },
+        {
+                "tag": "cell_spacing",
+                "patterns":  ["tell me about cell spacing", "what is cell spacing", "define cell spacing", "explain cell spacing"],
+                "responses": ["Cell Spacing is the space or gap between two consecutive cells."],
+                "context_set": [""]
+        },
+        {
+                "tag": "cell_pading",
+                "patterns":  ["tell me about cell padding", "what is cell padding", "define cell padding", "explain cell padding"],
+                "responses": ["Cell Padding is the space or gap between the text/ content of the cell and the edge/ border of the cell."],
+                "context_set": [""]
+        },
+        {
+                "tag": "club_rows",
+                "patterns":  ["tell me the easiest way to club two rows together", "how do i combine two or more rows in one row", "how do you join two or more rows in a single row", "i want to club two or more rows into one row", "how can i group two or more rows into one row", "is there a way to move two or more rows into a single row", "can we club two or more rows into a single row"],
+                "responses": ["rowspan.  <th rowspan=\"2\">Name</th>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "club_columns",
+                "patterns":  ["how can i combine two or more columns in a single column", "how do we combine two or more columns into one column", "how can i combine two or more columns into one column", "how do you club two or more columns into one column", "how can we group two or more columns into one column", "how do i group two or more columns into a single column", "how can you merge two or more columns into a single column"],
+                "responses": ["colspan . <th colspan=\"2\">Name</th>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "visibility_hidden",
+                "patterns":  ["what happens if we use attribute visibility :hidden", "what happens when we use attribute visibility :hidden", "what does the attribute visibility :hidden do"],
+                "responses": ["When we use the attribute cvisibility: hidden for an HTML element then that element will be hidden from the webpage but still takes up space"],
+                "context_set": [""]
+        },
+        {
+                "tag": "display_none",
+                "patterns":  ["what happens if we use attribute display :none", "what happens when we use attribute display :none", "what does the attribute display :none do"],
+                "responses": ["if we use the cdisplay: none attribute for an HTML element then the element will be hidden, and also it won't take up any space on the webpage"],
+                "context_set": [""]
+        },
+        {
+                "tag": "a",
+                "patterns":  ["what does the < a > tag do", "what does < a > do", "tell me what does < a > element do", "what does the < a > element do", "the < a > tag what does it do"],
+                "responses": ["The anchor tag <a> is used to create a hyperlink to another webpage or to a certain part of the webpage and these links are clickable"],
+                "context_set": [""]
+        },
+        {
+                "tag": "forms",
+                "patterns":  ["what are forms", "can you list the forms", "define the forms","define html forms","explain what are forms"],
+                "responses": ["The HTML form is used to collect the user inputs. HTML provides a <form> tag to create forms. To take input from the user we use the <input> tag inside the form so that all collected user data can be sent to the server for processing"],
+                "context_set": [""]
+        },
+        {
+                "tag": "create_forms",
+                "patterns":  ["how do i create a web form", "how can i create a form", "how do you create form", "how can i create a web form", "how do you create a web form ", "how to make forms", "how can i create form", "how can i create forms", "how do i create forms"],
+                "responses": ["<form action=\"/submit_data.php\"> </form>"],
+                "context_set": [""]
+        },
+        {
+                "tag": "figure",
+                "patterns":  ["what does the < figure > tag do", "what does < figure > do", "tell me what does < figure > element do", "what does the < figure > element do", "the < figure > tag what does it do"],
+                "responses": ["The <figure> tag specifies the self-contained content, like diagrams, images, code snippets, etc. <figure> tag is used to semantically organize the contents of an image like image, image caption, etc."],
+                "context_set": [""]
+        },
+        {
+                "tag": "select",
+                "patterns":  ["what does the < select > tag do", "what does < select > do", "tell me what does < select > element do", "what does the < select > element do", "the < select > tag what does it do"],
+                "responses": [" In the case of <select> tag a user will have to choose from a list of options"],
+                "context_set": [""]
+        },
+        {
+                "tag": "datalist",
+                "patterns":  ["what does the < datalist > tag do", "what does < datalist > do", "tell me what does < datalist > element do", "what does the < datalist > element do", "the < datalist > tag what does it do"],
+                "responses": ["<datalist> when used along with the <input> tag provides a suggestion that the user selects one of the options given or can enter some entirely different value"],
+                "context_set": [""]
+        },
+        {
+                "tag": "semantic_elemnts",
+                "patterns":  ["how do semantic elements work", "can you list the semantic elements", "what are semantic elements","list semantics elemnts","define semantic elements","explain semantic elemnts"],
+                "responses": ["Semantic elements are those which describe the particular meaning to the browser and the developer. Elements like <form>, <table>, <article>, <figure>, etc"],
+                "context_set": [""]
+        },
+        {
+                "tag": "div",
+                "patterns":  ["what does the < div > tag do", "what does < div > do", "tell me what does < div > element do", "what does the < div > element do", "the < div > tag what does it do"],
+                "responses": ["To logically divide the document"],
+                "context_set": [""]
+        },
+        {
+                "tag": "resize_image",
+                "patterns":  ["how do i resize an image", "how do i resize my image", "how can i resize an image", "how do we resize an image", "how do you resize an image", "how can i resize an image", "how to resize an image"],
+                "responses": ["Using height and width"],
+                "context_set": [""]
+        },
+        {
+                "tag": "html",
+                "patterns":  ["what is html","define html","explain html","what is the meaning of html"],
+                "responses": ["HTML stands for Hyper Text Markup Language. It is a language of the World Wide Web. It is a standard text formatting language which is used to create and display pages on the Web. HTML makes the text more interactive and dynamic. It can turn text into images, tables, links. HTML pages are saved by adding .html or .html in web page name."],
+                "context_set": [""]
+        },
+        {
+                "tag": "tags_elements",
+                "patterns":  ["how different are tags and elements", "is there a difference between tags and elements", "tell me the difference between an element and a tag", "tell me the difference between a tag and an element", "tell me the difference between elements and tags", "what is difference between elements and tags"],
+                "responses": ["The element is an individual component of the HTML web page or document. It represents semantics or meaning. For example, the title element represents the title of the document.and tags are the root of the HTML document which is used to specify that the document is HTML. For example, the Head tag is used to contain all the head element in the HTML file."],
+                "context_set": [""]
+        },
+        {
+                "tag": "marquee",
+                "patterns": ["what's a marquee", "what is a marquee","can you explain to me what is a marquee","descripe a marquee"],
+                "responses": ["Marquee is used for the scrolling text on a web page. It scrolls the image or text up, down, left or right automatically. You should put the text which you want to scroll within the <marquee>   </marquee> tag."],
+                "context_set": [""]
+        },
+        {
+                "tag": "html_xhtml",
+                "patterns":  ["tell me the difference between html and xhtml", "show the differences between html and xhtml", "list the differences between html and xhtml", "tell me the difference between html and xhtml","what is the difference between html and xhtml"],
+                "responses": ["The differences between HTML and XHTML are:\n HTML is an application of Standard Generalized Markup Language. Whereas, XML is an application of Extensible Markup Language.\nThe first one is a static Web Page whereas the later one is a dynamic Web Page.\nHTML allows programmer to perform changes in the tags and use attribute minimization whereas XHTML when user need a new markup tag then user can define it\n.html is about displaying information whereas XHTML is about describing the information."],
+                "context_set": [""]
+        },
+        {
+                "tag": "entity",
+                "patterns":  ["what is a html entity", "what are html entities","explain html entities","define html entities"],
+                "responses": ["In HTML some characters are reserved like ,<,>, /etc. To use these characters in our webpage we need to use the character entities called HTML Entities. Below are a few mapping between the reserved character and its respective entity character to be used."],
+                "context_set": [""]
+        },
+        {
+                "tag": "abbr",
+                "patterns":  ["what does an <abbr> tag do","what is <abbr>","tell me about the <abbr> tag","what does the <abbr> tag do"],
+                "responses": ["Defines an abbreviation or acronym"],
+                "context_set": [""]
+        },
+        {
+                "tag": "column_size",
+                "patterns":  ["how do you set the size of a column", "how can i set the size of a column", "how do i set the size of a column", "how can i set the size of a column", "how do you set the size of a column", "how do i set the size of a column","how to set the size of a column"],
+                "responses": ["<table style=\"width:100%\">"],
+                "context_set": [""]
+        },
+        {
+                "tag": "row_height",
+                "patterns":  ["how do i change the height of a row", "tell me how to change the height of a row", "how do i set the height of a row", "how do you set the height of a row", "how can i set the height of a row", "how do i set the height of a specific row","how to set the height of a row"],
+                "responses": ["<tr style=\"height:200px\">"],
+                "context_set": [""]
+        },
+        {
+                "tag": "dl",
+                "patterns":  ["tell me about the <dl> tag", "what is the <dl> tag", "what is the <dl> tag used for", "what does the <dl> tag mean", "what does a <dl> tag do", "what does the tag <dl>  do", "what is the <dl> tag ", "what does the <dl> tag do"],
+                "responses": ["The <dl> tag defines the description list"],
+                "context_set": [""]
+        }
+]
+}
